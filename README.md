@@ -23,20 +23,25 @@ Java Development Kit (JDK) 8 or higher
 A code editor or IDE like IntelliJ IDEA, Eclipse, or VS Code
 Terminal/Command Prompt for execution
 
-# Setup Instructions
+## Setup Instructions
 Follow these steps to install and run the program:
 
 1. Download the Repository and extract it.
 2. Open the project folder in your favorite Java IDE (IntelliJ IDEA, Eclipse, etc.).
+   
 3. Ensure the folder structure is as follows:
    src/
   Player.java
   Battle.java
   Game.java
+
 4.Compile a code:
    Open the terminal/command prompt in the src folder.
-   Compile the Java files: ### javac Player.java Battle.java Game.java
+   Compile the Java files: 
+   ### javac Player.java Battle.java Game.java
+   
 5.Run the program:
-   Run the Game class: ### java Game
+   Run the Game class:
+   ### java Game
    
    

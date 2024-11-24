@@ -10,14 +10,18 @@ import Java.Player;
 public class ManualTests {
 
     public static void main(String[] args) {
-        testPlayerTakeDamage();
-        testPlayerIsAlive();
-        testRollDice();
-        testDetermineFirstAttacker();
-        testTakeTurn();
+        testPlayerTakeDamage();// Test the player's ability to take damage and update health correctly
+        testPlayerIsAlive(); // Test whether the player's "alive" status is accurate
+        testRollDice(); // Test the dice roll functionality for valid outcomes
+        testDetermineFirstAttacker();// Test the logic for determining the first attacker
+        testTakeTurn();// Test the functionality of a single turn in the battle
         System.out.println("All tests passed!");
     }
 
+    /**
+     * Tests the Player's `takeDamage` method.
+     * Verifies that the player's health is reduced correctly and does not go below zero.
+     */
     static void testPlayerTakeDamage() {
         Player player = new Player("Java.Player A", 50, 5, 10);
 
@@ -34,6 +38,10 @@ public class ManualTests {
         }
     }
 
+    /**
+     * Tests the Player's `isAlive` method.
+     * Ensures it correctly identifies whether the player is alive or dead based on health.
+     */
     static void testPlayerIsAlive() {
         Player player = new Player("Java.Player A", 50, 5, 10);
 

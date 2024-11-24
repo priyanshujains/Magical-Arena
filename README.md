@@ -35,13 +35,15 @@ Follow these steps to install and run the program:
   Battle.java
   Game.java
 
-4.Compile a code:
+ 4.Compile a code:
    Open the terminal/command prompt in the src folder.
+   
    Compile the Java files: 
   **javac Player.java Battle.java Game.java**
    
-5.Run the program:
+  5.Run the program:
    Run the Game class:
+   
    **java Game**
    
    

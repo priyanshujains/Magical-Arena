@@ -1,3 +1,5 @@
+package Java;
+
 public class Battle {
     private Player player1;
     private Player player2;
@@ -8,7 +10,7 @@ public class Battle {
     }
 
     public void startBattle() {
-        System.out.println("Battle begins between " + player1.getName() + " and " + player2.getName());
+        System.out.println("Java.Battle begins between " + player1.getName() + " and " + player2.getName());
         Player attacker = determineFirstAttacker();
         Player defender = (attacker == player1) ? player2 : player1;//other one is defender
 
@@ -22,10 +24,10 @@ public class Battle {
         }
         //we got our winner
         Player winner = attacker.isAlive() ? attacker : defender;
-        System.out.println("Battle over! Winner is " + winner.getName());
+        System.out.println("Java.Battle over! Winner is " + winner.getName());
     }
 
-    private Player determineFirstAttacker() {
+    public Player determineFirstAttacker() {
         if (player1.getHealth() < player2.getHealth()) {
             return player1;
         } else if (player2.getHealth() < player1.getHealth()) {
@@ -36,7 +38,7 @@ public class Battle {
     }
 
     //core logic of a game
-    private void takeTurn(Player attacker, Player defender) {
+    public void takeTurn(Player attacker, Player defender) {
         System.out.println(attacker.getName() + " attacks " + defender.getName());
         int attackRoll = attacker.rollDice();
         int defendRoll = defender.rollDice();
